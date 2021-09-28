@@ -406,6 +406,7 @@ MonoBehaviour:
   distanceFromObject: 30
   mouseButton: 2
   scrollSensitivity: 30
+  momentumDelay: 0.99
 --- !u!1 &1289357072
 GameObject:
   m_ObjectHideFlags: 0
