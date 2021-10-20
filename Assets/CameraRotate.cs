@@ -27,12 +27,12 @@ public class CameraRotate : MonoBehaviour
         #region Rotate Camera
 
         // Pressed down (not held down, only the start)
-        if (Input.GetMouseButtonDown((int)mouseButton))
+        if (Input.GetMouseButtonDown((int)mouseButton) || Input.GetMouseButtonDown(0))
         {
             _previousPosition = _camera.ScreenToViewportPoint(Input.mousePosition);
         }
 
-        if (Input.GetMouseButton((int)mouseButton))
+        if (Input.GetMouseButton((int)mouseButton) || Input.GetMouseButton(0))
         {
             _previousDirection = _previousPosition - _camera.ScreenToViewportPoint(Input.mousePosition);
 
